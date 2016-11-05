@@ -25,7 +25,8 @@ secuencia=[
 #Funcion que abre el puerto
 def AbrePuerto():
 	ser = serial.Serial()
-	ser.port='/dev/ttyUSB0'
+	ser.port = '/dev/cu.usbserial-A400f2at'
+	#Linux ser.port='/dev/ttyUSB0'
 	ser.baudrate=38400	
 	ser.timeout=2
 	
